@@ -10,7 +10,8 @@ export default defineConfig({
     copy({
       targets: [
         { src: 'manifest.json', dest: 'dist' }, // 复制 manifest.json 到 dist 目录
-        { src: "src/icons/**", dest: 'dist/icons' } // 复制 src/icons/** 到 dist/icons 目录
+        { src: "src/icons/**", dest: 'dist/icons' }, // 复制 src/icons/** 到 dist/icons 目录
+        { src: "src/iframe.html", dest: 'dist' } 
       ]
     })
   ],

@@ -4,8 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vue-tsc && vite build",
+    "watch-build": "vite --watch build",
+    "watch-json": "node watch.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
